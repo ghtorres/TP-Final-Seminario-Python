@@ -67,7 +67,7 @@ Trabajo final para la asignatura 'Seminario de Lenguaje - Python' de la Facultad
 
   - Se incluyen 2 archivos principales a ejecutar:
      
-     - muestra_datos.py (permite la toma de datos y la muestra en las pantallas LEDs)
+     - muestra_datos.py (permite la toma de datos y la muestra en las pantallas LED)
      
      - registro_ambiental.py (almacena en el archivo datos-oficinas.json los datos de la
      medición de la oficina ingresada)
