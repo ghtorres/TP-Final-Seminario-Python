@@ -95,8 +95,8 @@ see <https://www.gnu.org/licenses/>.
 
   - Si bien las mediciones debían realizarse cada 60 segundos, por cuestiones prácticas a la hora de
   probar el programa se definió que las mediciones sean cada 10 segundos. Para modificar esto, no se
-  necesita más que cambiar la línea 128 del archivo registro_ambiental.py:
-     Línea 128: time.sleep(10) ---->  time.sleep(60)
+  necesita más que cambiar la línea 146 del archivo registro_ambiental.py:
+     Línea 146: time.sleep(10) ---->  time.sleep(60)
 
   - Los archivos, tanto los .JSON como los .PY, tienen que estar en el mismo directorio
 
