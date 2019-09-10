@@ -67,10 +67,15 @@ see <https://www.gnu.org/licenses/>.
   - La imagen letras.png también debe estar en el mismo directorio que los archivos .PY
 
   - No debe eliminarse ningún archivo (.json|.txt|.py|.png)
+  
+  - En el archivo "Informe Trabajo Final.pdf" se incluye un manual de usuario que detalla cómo usar la
+  aplicación.
 
-  - El look_and_feel está determinado por los datos de las oficinas del archivo datos-oficinas.json
-  Se puede modificar eligiendo la oficina en el menu de configuración (solo hay 2 oficinas). Para
-  ver reflejados los cambios, una vez realizadas las configuraciones, reiniciar el programa.
+  - El look_and_feel está determinado por los datos de las oficinas del archivo datos-oficinas.json que
+  se puede modificar eligiendo la oficina en el menu de configuración (solo hay 2 oficinas). Para
+  ver reflejados los cambios, una vez realizadas las configuraciones, reiniciar el programa. En el
+  manual de usuario se puede ver en detalle cómo se verá la interfaz con cada configuración del
+  look_and_feel.
 
   - El archivo reporte.txt inicia en blanco.
 
