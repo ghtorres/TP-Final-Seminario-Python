@@ -13,7 +13,7 @@
  Trabajo final para la asignatura 'Seminario de Lenguaje - Python' de la Facultad de Informática de la UNLP 
 
 
-* I N T E G R A N T E S *
+* I N T E G R A N T E S
 
 
     Delsanto, Julián Horacio  |   Legajo 14137/3
@@ -54,7 +54,7 @@ see <https://www.gnu.org/licenses/>.
 -------------------------------------------------------------------------------------------------------------
 
 
-* C O N S I D E R A C I O N E S *
+* C O N S I D E R A C I O N E S
 
 
   - El archivo a ejecutar es Main.py 
@@ -89,7 +89,7 @@ see <https://www.gnu.org/licenses/>.
 -------------------------------------------------------------------------------------------------------------
 
 
-* C O N S I D E R A C I O N E S *
+* C O N S I D E R A C I O N E S
 
   - Se incluyen 2 archivos principales a ejecutar:
      
