@@ -931,8 +931,9 @@ def jugar_sopa_letras():
     eligio_categoria = False
     errores = []
 
-    #  -----Lista con claves para habilitar/deshabilitar botones mediante funciones lambda-----
+    #  -----Listas con claves para habilitar/deshabilitar botones mediante funciones lambda-----
     lista_claves_botones = ['adj', 'sus', 'ver', 'ayuda', 'controlar']
+    lista_claves_grilla = list(dic.keys())
 
     #  -----Configuro la GUI-----
     botones = [[sg.Button('ADJ', pad=(10, 10), button_color=colores['adjetivos'], font=('Any 20', 20), key='adj',
@@ -985,7 +986,10 @@ def jugar_sopa_letras():
             list(map(lambda element: window.Element(element).Update(disabled=False), lista_claves_botones))
 
         if event == 'controlar':
-            window.Close()
+            #  -----Se inhabilitan los botones de la ventana de juego antes de mostrar los resultados para
+            #  que no se pueda modificar la grilla-----
+            list(map(lambda element: window.Element(element).Update(disabled=True), lista_claves_botones))
+            list(map(lambda element: window.Element(element).Update(disabled=True), lista_claves_grilla))
             break
 
         #  -----Si se clickea un botón se modificarán los valores asociados a su clave en el
@@ -1145,6 +1149,13 @@ def controlar_jugada(datos_partida):
             palabras_acertadas.append(palabra)
         else:
             palabras_erradas.append(palabra)
+
+    #  -----Agrego a la lista de palabras erradas la categoría real de cada palabra-----
+    aux = len(palabras_erradas)
+    palabras_por_categorias = abrir_archivo_palabras()
+    for i in range(aux):
+        palabra = palabras_erradas[i]
+        palabras_erradas[i] = str(palabra) + ' es un ' + str(palabras_por_categorias[palabra])
 
     #  -----Invoco al proceso que mostrará los resultados-----
     resultados_jugada(palabras_completas, palabras_incompletas, palabras_acertadas, palabras_erradas,
