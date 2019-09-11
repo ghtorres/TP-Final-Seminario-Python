@@ -79,7 +79,11 @@ see <https://www.gnu.org/licenses/>.
 
   - El archivo reporte.txt inicia en blanco.
   
-  - La aplicación corre tanto en Windows como en Linux
+  - La aplicación corre tanto en Windows como en Linux.
+  
+  - El archivo "TP Final - Sopa de Letras.zip" es una versión antigua de la aplicación. Usar la versión
+  del archivo "Trabajo Final - Sopa de Letras + Raspberry Pi" o bien utilizar los archivos en el
+  directorio "Sopa de Letras".
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -105,7 +109,7 @@ see <https://www.gnu.org/licenses/>.
   necesita más que cambiar la línea 146 del archivo registro_ambiental.py:
      Línea 146: time.sleep(10) ---->  time.sleep(60)
 
-  - Los archivos, tanto los .JSON como los .PY, tienen que estar en el mismo directorio
+  - Los archivos, tanto los .JSON como los .PY, tienen que estar en el mismo directorio.
 
   - No debe eliminarse ningún archivo (.json|.py)
 
