@@ -77,8 +77,7 @@ see <https://www.gnu.org/licenses/>.
 
   - No debe eliminarse ningún archivo (.json|.txt|.py|.png)
   
-  - En el archivo "Guía de Usuario.pdf" se incluye un manual que detalla cómo usar la
-  aplicación.
+  - El archivo "Guía de Usuario.pdf" es un manual que detalla cómo usar la aplicación.
 
   - El look_and_feel está determinado por los datos de las oficinas del archivo datos-oficinas.json que
   se puede modificar eligiendo la oficina en el menu de configuración (solo hay 2 oficinas). Para
