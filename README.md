@@ -73,11 +73,13 @@ see <https://www.gnu.org/licenses/>.
 
   - El look_and_feel está determinado por los datos de las oficinas del archivo datos-oficinas.json que
   se puede modificar eligiendo la oficina en el menu de configuración (solo hay 2 oficinas). Para
-  ver reflejados los cambios, una vez realizadas las configuraciones, reiniciar el programa. En el
-  manual de usuario se puede ver en detalle cómo se verá la interfaz con cada configuración del
+  ver reflejados los cambios, una vez realizadas las configuraciones, reiniciar el programa. En la
+  guía de usuario se puede ver en detalle cómo se verá la interfaz con cada configuración del
   look_and_feel.
 
   - El archivo reporte.txt inicia en blanco.
+  
+  - La aplicación corre tanto en Windows como en Linux
 
 
 -------------------------------------------------------------------------------------------------------------
