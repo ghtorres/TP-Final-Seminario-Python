@@ -77,7 +77,7 @@ see <https://www.gnu.org/licenses/>.
 
   - No debe eliminarse ningún archivo (.json|.txt|.py|.png)
   
-  - En el archivo "Informe Trabajo Final.pdf" se incluye un manual de usuario que detalla cómo usar la
+  - En el archivo "Guía de Usuario.pdf" se incluye un manual que detalla cómo usar la
   aplicación.
 
   - El look_and_feel está determinado por los datos de las oficinas del archivo datos-oficinas.json que
