@@ -54,8 +54,17 @@ see <https://www.gnu.org/licenses/>.
 -------------------------------------------------------------------------------------------------------------
 
 
-* C O N S I D E R A C I O N E S
+* I N T R O D U C C I Ó N
 
+  “Soupe à l'oignon” es una aplicación educativa pensada para estudiantes que cursan el primer ciclo educativo 
+  de nivel primario que consiste en una sopa de letras (Word Search) en la que no sólo se deben encontrar una 
+  cantidad determinada de palabras, sino que, además, estas deben ser clasificadas en adjetivos, sustantivos o
+  verbos.
+  La aplicación permite al docente determinar cómo será el desarrollo del juego mediante un menú de configuración 
+  simple e intuitivo.
+
+
+* C O N S I D E R A C I O N E S
 
   - El archivo a ejecutar es Main.py 
 
@@ -77,12 +86,14 @@ see <https://www.gnu.org/licenses/>.
   guía de usuario se puede ver en detalle cómo se verá la interfaz con cada configuración del
   look_and_feel.
 
-  - El archivo reporte.txt inicia en blanco.
+  - El archivo "reporte.txt" inicia en blanco, el cual viene incluído en los archivos .zip que contienen
+  la aplicación. No obstante, si se opta por descargar los archivos del directorio "Sopa de Letras", se
+  debe crear un archivo llamado "reporte.txt" en blanco para el óptimo funcionamiento de la aplicación.
   
   - La aplicación corre tanto en Windows como en Linux.
   
-  - El archivo "TP Final - Sopa de Letras.zip" es una versión antigua de la aplicación. Usar la versión
-  del archivo "Trabajo Final - Sopa de Letras + Raspberry Pi" o bien utilizar los archivos en el
+  - El archivo "TP Final - Sopa de Letras.zip" contiene una versión antigua de la aplicación. Usar la
+  versión del archivo "Trabajo Final - Sopa de Letras + Raspberry Pi.zip" o bien utilizar los archivos del
   directorio "Sopa de Letras".
 
 
@@ -93,6 +104,12 @@ see <https://www.gnu.org/licenses/>.
 
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
+
+* I N T R O D U C C I Ó N
+
+  “Registro Ambiental” y “Muestra Datos” son dos aplicaciones meteorológicas. La primera permite registrar la 
+  temperatura y humedad ambiente (mediante un sensor conectado a una Raspberry Pi) y la segunda posibilita la 
+  muestra de los datos recabados en una matriz led al detectar un sonido.
 
 
 * C O N S I D E R A C I O N E S
