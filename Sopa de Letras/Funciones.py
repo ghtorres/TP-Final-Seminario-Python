@@ -739,7 +739,7 @@ def rellenar_fila(largo, largo_maximo, fila, formato, boton_text):
             char = random.choice(string.ascii_letters).lower()
             if formato == 'mayuscula':
                 char = char.upper()
-            k = random.randrange(1000000)
+            k = random.randrange(10000000)
             k = k * -1
             letra = sg.Button(str(char), button_color=('black', 'white'), font=('arial', boton_text, 'bold'),
                               size=(2, 1), key=k)
@@ -853,7 +853,7 @@ def crear_sopa_letras(data_configuracion):
         fila = []
         largo = len(palabra)
         for caracter in palabra:
-            k = random.randrange(1000000)
+            k = random.randrange(10000000)
             #  -----El formato del diccionario es {"claveNumerica": [caracter, palabra, categoría, siFueActivado]}
             diccionario[k] = [caracter, palabra, None, False]
             boton = sg.Button(str(caracter), button_color=('black', 'white'), font=('arial', boton_text, 'bold'),
@@ -988,6 +988,7 @@ def jugar_sopa_letras():
         if event == 'controlar':
             #  -----Se inhabilitan los botones de la ventana de juego antes de mostrar los resultados para
             #  que no se pueda modificar la grilla-----
+            color = ('black', 'white')
             list(map(lambda element: window.Element(element).Update(disabled=True), lista_claves_botones))
             list(map(lambda element: window.Element(element).Update(disabled=True), lista_claves_grilla))
             break
