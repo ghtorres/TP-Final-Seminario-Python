@@ -20,6 +20,7 @@ import json
 import string
 import sys
 import unicodedata
+import datetime
 from pattern.web import Wiktionary
 from pattern.es import parse, split
 
@@ -317,7 +318,6 @@ def crear_archivo_reporte(datos):
     file = open('reporte.txt', 'w')
     for element in datos:
         file.write(element)
-        file.write('\n')
     file.close()
 
 
@@ -403,8 +403,10 @@ def configurar_palabras():
             tipo_palabra_pattern = consulta_pattern(palabra)
             coinciden = True if tipo_palabra_wiktionary == tipo_palabra_pattern else False
             if not coinciden:
-                error = 'La clasificacion de la palabra ' + str(palabra) + ' en Wiktionary no coincide ' \
-                                                                           'con la clasificacion de Pattern'
+                fecha = datetime.datetime.now()
+                fecha = '<' + str(fecha) + '>\n'
+                error = fecha + ' La clasificacion de la palabra [' + str(palabra).capitalize() + \
+                                '] en Wiktionary no coincide con la clasificacion de Pattern.\n'
                 lista_reporte.append(error)
 
             palabras[palabra] = tipo_palabra_wiktionary
@@ -423,7 +425,9 @@ def configurar_palabras():
 
         #  -----Sino lo informo en el reporte-----
         else:
-            error = 'La palabra ' + str(palabra) + ' no está definida en Wiktionary'
+            fecha = datetime.datetime.now()
+            fecha = '<' + str(fecha) + '>\n'
+            error = fecha + ' La palabra [' + str(palabra).capitalize() + '] no está definida en Wiktionary.\n'
             lista_reporte.append(error)
 
     #  -----Guardo las modificaciones en los distintos archivos-----
@@ -467,7 +471,7 @@ def mostrar_reporte(font_reporte):
 
     #  -----Configuro la GUI-----
     frame_layout_r = [[sg.T('Reporte Wiktionary/Pattern')],
-                      [sg.Listbox(values=reporte, pad=(10, 10), size=(60, 10), key='tabla',
+                      [sg.Listbox(values=reporte, pad=(10, 10), size=(90, 10), key='tabla',
                                   font=font_reporte)]]
 
     report_screen = [[sg.Frame('Reporte', frame_layout_r, font='Any 20', title_color='violet')]]
@@ -649,7 +653,7 @@ def menu_ayuda_definiciones(palabras):
 
     #  -----Configuro la GUI-----
     frame_layout_d = [[sg.T('Definiciones de las palabras a buscar')],
-                      [sg.Listbox(values=definiciones, pad=(10, 10), size=(60, 10), key='tabla',
+                      [sg.Listbox(values=definiciones, pad=(10, 10), size=(80, 10), key='tabla',
                                   font=('Comic Sans MS', 12))]]
 
     definitions_screen = [[sg.Frame('Lista de Definiciones', frame_layout_d, font='Any 20', title_color='violet')]]
@@ -991,6 +995,7 @@ def jugar_sopa_letras():
             color = ('black', 'white')
             list(map(lambda element: window.Element(element).Update(disabled=True), lista_claves_botones))
             list(map(lambda element: window.Element(element).Update(disabled=True), lista_claves_grilla))
+            list(map(lambda element: window.Element(element).Update(disabled=True), errores))
             break
 
         #  -----Si se clickea un botón se modificarán los valores asociados a su clave en el
